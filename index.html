@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Information</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Crop Information</h1>
+    <div class="crop-list">
+        <div class="crop" onclick="showDetails('ladyfinger')">
+            <img src="ladyfinger.jpg" alt="Lady Finger">
+            <p>Lady Finger</p>
+        </div>
+        <div class="crop" onclick="showDetails('yardlongbean')">
+            <img src="yardlongbean.jpg" alt="Yardlong Bean">
+            <p>Yardlong Bean</p>
+        </div>
+        <div class="crop" onclick="showDetails('limabean')">
+            <img src="limabean.jpg" alt="Lima Bean">
+            <p>Lima Bean</p>
+        </div>
+        <div class="crop" onclick="showDetails('tomatoes')">
+            <img src="tomatoes.jpg" alt="Tomatoes">
+            <p>Tomatoes</p>
+        </div>
+        <div class="crop" onclick="showDetails('watermelon')">
+            <img src="watermelon.jpg" alt="Watermelon">
+            <p>Watermelon</p>
+        </div>
+        <div class="crop" onclick="showDetails('cucumber')">
+            <img src="cucumber.jpg" alt="Cucumber">
+            <p>Cucumber</p>
+        </div>
+    </div>
+
+    <div id="crop-details" class="details">
+        <h2 id="crop-name"></h2>
+        <p id="crop-info"></p>
+        <button onclick="hideDetails()">Close</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
